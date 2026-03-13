@@ -9,7 +9,6 @@ In Kotlin, the type system distinguishes between references that can hold `null`
 - `Int?`: Can be an integer **or** null.
     
 
-Kotlin
 
 ```
 val x1 = readln().toInt()          // Type: Int (May throw exception if input is invalid)
@@ -24,7 +23,6 @@ val x2 = readln().toIntOrNull()    // Type: Int? (Returns null if input is inval
 
 The `!!` operator converts any value to a non-nullable type and **throws a NullPointerException (NPE)** if the value is null. Use this only when you are 100% sure the value isn't null.
 
-Kotlin
 
 ```
 // Will crash if x2 or x3 is null
@@ -36,7 +34,6 @@ println("Addition of x2 + x3 is : $x4")
 
 Executes the call only if the variable is **not null**. Otherwise, it returns `null`.
 
-Kotlin
 
 ```
 val x7: Int? = readln().toIntOrNull()
@@ -47,7 +44,6 @@ val x8 = x7?.inc() // If x7 is 4, x8 is 5. If x7 is null, x8 is null.
 
 Provides a **default value** if the expression on the left is null.
 
-Kotlin
 
 ```
 val x5 = readln().toIntOrNull() ?: 0 // Returns 0 if input is invalid
@@ -67,7 +63,6 @@ val x5 = readln().toIntOrNull() ?: 0 // Returns 0 if input is invalid
 
 If you check a variable for null using an `if` statement, Kotlin automatically "casts" it to a non-nullable type inside that block.
 
-Kotlin
 
 ```
 if (x7 != null) {
@@ -80,7 +75,6 @@ if (x7 != null) {
 
 Tries to cast a value to a specific type. If the cast is impossible, it returns `null` instead of crashing.
 
-Kotlin
 
 ```
 val input: Any = "Hello"
@@ -91,7 +85,6 @@ val safeInt: Int? = input as? Int // Returns null
 
 Used to execute a block of code **only** if the object is not null. It uses `it` to refer to the non-null value.
 
-Kotlin
 
 ```
 val email: String? = readln().takeIf { it.isNotBlank() }
@@ -104,7 +97,6 @@ email?.let {
 
 You can filter out nulls from a list easily using `filterNotNull()`.
 
-Kotlin
 
 ```
 val numbersWithNulls: List<Int?> = listOf(10, null, 30)
