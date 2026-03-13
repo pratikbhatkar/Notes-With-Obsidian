@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Null Safety In Kotlin.md",
+                "file": "Kotlin/Null Safety In Kotlin.md",
                 "mode": "source",
                 "source": false
               },
@@ -108,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8cef03075fc4b9f8",
